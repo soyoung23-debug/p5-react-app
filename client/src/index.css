@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@utility aqi-card {
+  @apply mt-8 rounded-2xl border-2 overflow-hidden shadow-lg transition-all duration-500 bg-white/50;
+}
+
+@utility aqi-stat-panel {
+  @apply p-8 flex flex-col justify-center items-center bg-white/40 border-b md:border-b-0 md:border-r border-slate-200;
+}
+
+@utility aqi-desc-panel {
+  @apply p-8 flex flex-col justify-center bg-transparent;
+}
+
+@utility pollutant-container {
+  @apply bg-slate-800 p-6;
+}
+
+@utility pollutant-grid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-4;
+}
+
+@utility pollutant-box {
+  @apply bg-slate-700/50 p-3 rounded-lg border border-slate-600 flex flex-col;
+}
+
+@utility pollutant-label {
+  @apply text-slate-400 text-[10px] font-bold uppercase tracking-wider mb-1;
+}
+
+@utility pollutant-value {
+  @apply text-white text-lg font-mono leading-none;
+}
+
+@utility save-action-bar {
+  @apply my-8 p-6 bg-emerald-600 rounded-2xl flex flex-col md:flex-row 
+         items-center justify-between gap-4 shadow-xl border border-emerald-500;
+}
+
+@utility btn-save-outline {
+  @apply px-8 py-3 bg-white text-emerald-700 font-black uppercase 
+         tracking-widest text-xs rounded-xl hover:bg-emerald-50 
+         transition-all shadow-md active:scale-95;
+}
